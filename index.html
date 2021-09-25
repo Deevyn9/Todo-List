@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Todo app | Frontend Mentor Challenge</title>
+</head>
+<body>
+  <div class="top-image"></div>
+  <main>
+    <!--The Todo Header-->
+    <div class="header">
+      <h1>TODO</h1>
+      <div onclick="changeTheme()" class="toggle-btn"></div>
+    </div>
+    <!--Add activity tab-->
+    <div class="new-todo">
+    <div class="circle"></div>
+    <input type="text" name="text" placeholder="Create a new todo..." class="add-todo">
+    </div>
+    <!--The main todo-->
+    <div class="todos"></div>
+    <div class="remarks">
+      <div class="countCompleted"></div>
+      <div class="clear-btn" onclick="clearCompleted()">Clear Completed</div>
+      <div class="filters">
+        <div class="filter-btn" onclick="showAll()">All</div>
+        <div class="filter-btn" onclick="showActive()">Active</div>
+        <div class="filter-btn" onclick="showCompleted()">Completed</div>
+      </div>
+    </div>
+    <div class="drag">
+      <p>Drag and drop to reorder list</p>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://divineobeten.netlify.app/#" target="_blank">Divine Obeten</a>.
+    </div>
+  </main> 
+  <script src="main.js"></script>
+</body>
+</html>
