@@ -113,7 +113,7 @@ function newTodo(value) {
 function countCompleted() {
     completedCount.textContent = `${
         todos.filter((t) => t.checked === false).length
-    } item(s) left`;
+     } item(s) left`;
 }
 
 function clearCompleted() {
